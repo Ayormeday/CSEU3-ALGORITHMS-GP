@@ -17,7 +17,7 @@ def power_r(a, b):
     if b == 0: #O(1)
         return 1 #O(1)
     # positive case if b is greater than zero
-    elif b > 0:   #O(n)
+    elif b > 0:   #O(1)
         # Recursive case
         # Call the function on b - 1
         return a * power_r(a, b - 1) #O(n)
