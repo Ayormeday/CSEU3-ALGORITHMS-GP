@@ -1,6 +1,6 @@
 
 # Challenge What is the runtime complexity of this function
-#O(nLog n)
+#O(n)
 def power_r(a, b):
     # Error checking
     # try to cast our exponent to an int
@@ -20,12 +20,12 @@ def power_r(a, b):
     elif b > 0:   #O(n)
         # Recursive case
         # Call the function on b - 1
-        return a * power_r(a, b - 1) #O(Log n)
+        return a * power_r(a, b - 1) #O(n)
     # Recursive negative exponent
     else:
         # return 1 divided by a multiplied by the function with -b - 1
-        return 1 / (a * power_r(a, -b - 1)) #O(Log n)
+        return 1 / (a * power_r(a, -b - 1)) #O(n)
         # or return 1 divided by function with -b
         # return 1 / power_r(a, -b)
 
-        #O(n) * O(log n)
+    
